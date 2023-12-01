@@ -1,0 +1,49 @@
+<div class="container">
+    <div class="row">
+        <div class="form-bg">
+            <form #addRequestForm="ngForm" (ngSubmit)="addRequest(addRequestForm)">
+                <div class="panel panel priamry">
+                    <div class="panel-heading">
+                        <h3 class="panel-title" style="text-align: center;">Add Travel Request</h3>
+                        <br />
+                    </div>
+                    <div class="panel-body">
+                        <div class="form-group">
+                            <label for="employeeId">Employee Name</label>
+                            <select id="employeeId" class="form-control" name="employeeId"
+                                [(ngModel)]="newRequest.employeeId" required #employeeId="ngModel" >
+                                <option value="" disabled selected>Select Employee Name</option>
+                                <option *ngFor="let emp of employees" [value]="emp.employeeId">{{ emp.employeeName }}
+                                </option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="fromLocation">From Location</label>
+                            <input id="fromLocation" class="form-control" name="fromLocation"
+                                [(ngModel)]="newRequest.fromLocation" #fromLocation="ngModel">
+                        </div>
+                        <div class="form-group">
+                            <label for="toLocation">To Location</label>
+                            <input id="toLocation" class="form-control" name="toLocation"
+                                [(ngModel)]="newRequest.toLocation" #toLocation="ngModel">
+                        </div>
+                        <div class="form-group">
+                            <label for="requestDate">Date</label>
+                            <input id="requestDate" class="form-control" name="requestDate"
+                                [(ngModel)]="newRequest.requestDate" type="datetime-local">
+                        </div>
+
+
+
+                        <br />
+
+
+
+                        <div class="panel-footer" style="margin-left: 30%;"> <button [disabled]="addRequestForm.invalid"
+                                class="btn btn-primary">Submit</button></div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

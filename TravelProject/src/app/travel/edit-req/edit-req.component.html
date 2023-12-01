@@ -1,0 +1,39 @@
+<p>edit-req works!</p>
+<div class="container">
+    <div class="row">
+        <div class="form-bg">
+            <form #editTravelForm="ngForm" (ngSubmit)="editRequest()">
+                <div class="panel panel priamry">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Edit Request</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="form-group">
+                            <label for="fromLocation">From Destination</label>
+                            <input id="fromLocation" class="form-control" #TravelModel="ngModel" name="fromLocation"
+                                [(ngModel)]="newReq.fromLocation" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="toLocation">To Destination</label>
+                            <input id="toLocation" class="form-control" #TravelModel="ngModel" name="toLocation"
+                                [(ngModel)]="newReq.toLocation" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="requestDate">Date </label>
+                            <input id="requestDate" class="form-control" name="requestDate" [(ngModel)]="newReq.requestDate" type="datetime">
+                        </div>
+                       
+                       
+ 
+ 
+ 
+ 
+ 
+                        <div class="panel-footer"> <button [disabled]="editTravelForm.invalid"
+                                class="btn btn-primary">Submit</button></div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

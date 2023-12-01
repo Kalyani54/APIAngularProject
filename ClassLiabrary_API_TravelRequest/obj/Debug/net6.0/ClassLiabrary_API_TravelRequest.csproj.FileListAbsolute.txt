@@ -1,0 +1,11 @@
+C:\Users\KALYANIG\Desktop\JWT\ClassLiabrary_API_TravelRequest\bin\Debug\net6.0\ClassLiabrary_API_TravelRequest.deps.json
+C:\Users\KALYANIG\Desktop\JWT\ClassLiabrary_API_TravelRequest\bin\Debug\net6.0\ClassLiabrary_API_TravelRequest.dll
+C:\Users\KALYANIG\Desktop\JWT\ClassLiabrary_API_TravelRequest\bin\Debug\net6.0\ClassLiabrary_API_TravelRequest.pdb
+C:\Users\KALYANIG\Desktop\JWT\ClassLiabrary_API_TravelRequest\obj\Debug\net6.0\ClassLiabrary_API_TravelRequest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\KALYANIG\Desktop\JWT\ClassLiabrary_API_TravelRequest\obj\Debug\net6.0\ClassLiabrary_API_TravelRequest.AssemblyInfoInputs.cache
+C:\Users\KALYANIG\Desktop\JWT\ClassLiabrary_API_TravelRequest\obj\Debug\net6.0\ClassLiabrary_API_TravelRequest.AssemblyInfo.cs
+C:\Users\KALYANIG\Desktop\JWT\ClassLiabrary_API_TravelRequest\obj\Debug\net6.0\ClassLiabrary_API_TravelRequest.csproj.CoreCompileInputs.cache
+C:\Users\KALYANIG\Desktop\JWT\ClassLiabrary_API_TravelRequest\obj\Debug\net6.0\ClassLiabrary_API_TravelRequest.dll
+C:\Users\KALYANIG\Desktop\JWT\ClassLiabrary_API_TravelRequest\obj\Debug\net6.0\refint\ClassLiabrary_API_TravelRequest.dll
+C:\Users\KALYANIG\Desktop\JWT\ClassLiabrary_API_TravelRequest\obj\Debug\net6.0\ClassLiabrary_API_TravelRequest.pdb
+C:\Users\KALYANIG\Desktop\JWT\ClassLiabrary_API_TravelRequest\obj\Debug\net6.0\ref\ClassLiabrary_API_TravelRequest.dll

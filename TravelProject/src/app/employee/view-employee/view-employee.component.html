@@ -1,0 +1,34 @@
+<p>view-employee works!</p>
+<p>Employee List</p>
+
+<table class="table table-striped">
+  <tr>
+    <td>Employee Id</td>
+    <td>Name</td>
+    <td>Contact</td>
+    <td>Department</td>
+    <td>Address</td>
+    <td>Date of Birth</td>
+    
+  </tr>
+  
+  <tr *ngFor="let emp of employeeList , trackBy:trackByEmployeeId">
+    <td>{{ emp.employeeId}}</td>
+    <td>{{ emp.employeeName }}</td>
+    <td>{{ emp.contact }}</td>
+    <td>{{ emp.dept }}</td>
+    <td>{{ emp.address }}</td>
+    <td>{{ emp.dob }}</td>
+     <td>
+    <a [routerLink]="['/detail/',emp.employeeId]">Details</a>
+    <a [routerLink]="['/edit/',emp.employeeId]">Edit      </a>
+    <a [routerLink]="['/delete/',emp.employeeId]">Delete</a>
+      <!--  <a [routerLink]="['/employee/edit/', employee.id]">Edit</a>
+      <a [routerLink]="['/employee/delete/', employee.id]">Delete</a>-->
+    </td> 
+  </tr>
+
+  <tr *ngIf="!employeeList || employeeList.length==0">
+    <td colspan="3">No Employee to display</td>
+</tr>
+</table>

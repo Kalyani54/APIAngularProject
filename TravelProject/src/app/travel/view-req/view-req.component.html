@@ -1,0 +1,58 @@
+<br />
+<h2 style="text-align: center;">Travel Request List</h2>
+
+<br />
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Request Id</th>
+      <th>Employee Id</th>
+      <th>From Location</th>
+      <th>To Location</th>
+      <th>Date</th>
+      <th>Approve Status</th>
+      <th>Booking Status</th>
+      <th>Current Status</th>
+      <th>Actions</th>
+      <th>Aprrove</th>
+      <th>Book</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let req of reqList ">
+      <td>{{ req.requestId}}</td>
+      <td>{{ req.employeeId}}</td>
+      <td>{{ req.fromLocation }}</td>
+      <td>{{ req.toLocation }}</td>
+      <td>{{ req.requestDate}}</td>
+      <td>{{ req.approveStatus }}</td>
+      <td>{{ req.bookingStatus }}</td>
+      <td>{{ req.currentStatus }}</td>
+      <td style="display: flex;">
+
+        <a [routerLink]="['/editRequest/',req.requestId]" class="edit-link">Edit</a>
+        <a [routerLink]="['/deleteRequest/',req.requestId]" class="delete-link">Delete</a>
+      </td>
+      <td>
+      <button class="btn btn-success">
+        <a *ngIf="req.approveStatus === 'Pending'; else showElse" [routerLink]="['/approveStatus/', req.requestId]">Approve</a>
+        <ng-template #showElse>Approve</ng-template>
+      </button>
+    </td>
+      <td>
+        <button class="btn btn-success">
+            <a *ngIf="req.bookingStatus == 'Pending' && req.currentStatus == 'Open'; else showwElse" [routerLink]="['/bookingStatus/', req.requestId]">Book</a>
+            <ng-template #showwElse>Book</ng-template>
+        </button>
+    </td>
+     
+    </tr>
+  </tbody>
+
+
+
+  <tr *ngIf="!reqList || reqList.length==0">
+    <td colspan="3">No Travel Request to display</td>
+  </tr>
+</table>

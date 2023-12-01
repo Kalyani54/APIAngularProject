@@ -1,0 +1,23 @@
+.edit-link, .delete-link {
+    text-decoration: none; /* Remove default underline */
+    color: #000; /* Set the initial color */
+    transition: color 0.3s ease, box-shadow 0.3s ease; /* Add a smooth transition effect on color and box-shadow change */
+    display: inline-block; /* Ensure the links display horizontally */
+  
+    /* Additional styling if needed */
+    font-weight: bold;
+    padding: 8px 12px;
+    border: 1px solid #000; /* Border style for the box */
+    border-radius: 4px; /* Optional: Add rounded corners */
+    margin-right: 10px; /* Optional: Add some spacing between the links */
+    margin-bottom: 10px
+  }
+  
+  .edit-link:hover {
+    color: #00f; /* Change text color on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.3); /* Add a box-shadow on hover */
+  }
+  .delete-link:hover{
+    color: rgb(255, 68, 0); /* Change text color on hover */
+    box-shadow: 0 0 10px rgba(196, 34, 34, 0.3); /* Add a box-shadow on hover */
+  }

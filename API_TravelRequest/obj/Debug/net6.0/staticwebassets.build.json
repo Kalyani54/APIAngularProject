@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "c5H8JVHu3dk7TZBYZmDha1NNeF9ikv6piHmSPbFqe4A=",
+  "Source": "API_TravelRequest",
+  "BasePath": "_content/API_TravelRequest",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

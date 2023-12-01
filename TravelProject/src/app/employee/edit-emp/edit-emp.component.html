@@ -1,0 +1,52 @@
+<p>edit-emp works!</p>
+
+
+<div class="container">
+    <div class="row">
+        <div class="form-bg">
+            <form #editEmployeeForm="ngForm" (ngSubmit)="editEmp()">
+                <div class="panel panel priamry">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Add Employee</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="form-group">
+                            <label for="employeeName">Employee Name</label>
+                            <input id="employeeName" class="form-control" #employeeModel="ngModel" name="employeeName"
+                                [(ngModel)]="newEmp.employeeName" required>
+
+
+                        </div>
+                        <div class="form-group">
+                            <label for="contact">Contact</label>
+                            <input id="contact" class="form-control" name="contact" [(ngModel)]="newEmp.contact" required #contact="ngModel">
+                        </div>
+                        <div class="form-group">
+                            <label for="dept">Department</label>
+                            <input id="dept" class="form-control" name="dept" [(ngModel)]="newEmp.dept" #dept="ngModel">
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Address</label>
+                            <input id="address" class="form-control" name="address" [(ngModel)]="newEmp.address" #address="ngModel">
+                        </div>
+                        <div class="form-group">
+                            <label for="dob">Date Of Birth</label>
+                            <input id="dob" class="form-control" name="dob" [(ngModel)]="newEmp.dob" type="datetime-local">
+                        </div>
+
+
+
+
+
+                        <div class="panel-footer"> <button [disabled]="editEmployeeForm.invalid"
+                                class="btn btn-primary">Submit</button></div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+newEmployee

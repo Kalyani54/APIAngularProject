@@ -1,0 +1,37 @@
+body {
+    background-color: #f8f9fa; /* Set background color */
+  }
+  
+  .container {
+    display: flex;
+    margin-top: 20px;
+  }
+  
+  .col-md-3 {
+   
+    background-color: #343a40; /* Set the background color of the sidebar */
+    color: #ffffff; /* Set the text color of the sidebar */
+    padding: 15px;
+    border-radius: 8px;
+  }
+  
+  .nav-item a {
+    color: #131010; /* Set the text color of the links */
+    text-decoration: none;
+    padding: 8px;
+    display: block;
+  }
+  
+  .nav-item a:hover {
+    background-color: #495057; /* Set the background color on hover */
+    border-radius: 4px;
+  }
+  
+  .col-md-9 {
+    padding: 15px;
+  }
+  
+  .activeLink {
+    background-color: #6c757d; /* Set the background color for the active link */
+    border-radius: 4px;
+  }

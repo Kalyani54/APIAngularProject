@@ -1,0 +1,18 @@
+<div>
+    <h2>Approve Travel Request</h2>
+    <div>
+      <!-- Display details of the travel request -->
+      <p>Request ID: {{ travelRequest.requestId }}</p>
+      <!-- Display other details of the request -->
+  
+      <!-- Provide input fields to update statuses -->
+      <label for="approvalStatus">Approval Status:</label>
+      <input id="approvalStatus" type="text" [(ngModel)]="travelRequest.approveStatus" />
+  
+      <!-- Add more input fields for booking status and other statuses -->
+  
+      <!-- Button to update statuses -->
+      <button (click)="updateApprovalStatus()">Update Status</button>
+    </div>
+  </div>
+  

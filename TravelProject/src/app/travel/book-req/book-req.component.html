@@ -1,0 +1,18 @@
+<div>
+    <h2>Book Travel Request</h2>
+    <div>
+      <!-- Display details of the travel request -->
+      <p>Request ID: {{ travelRequest.requestId }}</p>
+      <!-- Display other details of the request -->
+  
+      <!-- Provide input fields to update statuses -->
+      <label for="bookingStatus">Booking Status:</label>
+      <input id="bookingStatus" type="text" [(ngModel)]="travelRequest.bookingStatus" />
+  
+      <!-- Add more input fields for other statuses -->
+  
+      <!-- Button to update statuses -->
+      <button [disabled]="!canBook()" (click)="updateBookingStatus()">Update Status</button>
+    </div>
+  </div>
+  
